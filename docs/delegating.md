@@ -1,6 +1,10 @@
 # Delegating
 
-This file covers how to delegate your Graviton token
+This document covers how to delegate your Graviton token
+
+## Delegating via Cosmostation
+
+[Community guide for Cosmostation delegation (Without Ledger)](https://stakeking.notion.site/Gravity-Bridge-Delegation-Guide-c9c0ff7b190b45b9a4e6b7a54c62a996)
 
 ## Delegating via the command Line
 
@@ -19,14 +23,14 @@ gravity init gravity-bridge-1
 gravity keys add --ledger <your ledger key name>
 
 # you should see your ledger address
-gravity keys list 
+gravity keys list
 
 gravity tx staking delegate --from <your ledger key name> <valoper address> <amount> --node http://chainripper-2.althea.net:26657 --chain-id gravity-bridge-1
 ```
 
 ### Mac (Ledger)
 
-If you are running Linux and have your keys stored in a ledger do the following
+If you are running Mac and have your keys stored in a ledger do the following
 
 ```bash
 wget https://github.com/Gravity-Bridge/Gravity-Bridge/releases/download/v1.0.8/gravity-darwin-amd64
@@ -37,7 +41,7 @@ gravity init gravity-bridge-1
 gravity keys add --ledger <your ledger key name>
 
 # you should see your ledger address
-gravity keys list 
+gravity keys list
 
 gravity tx staking delegate --from <your ledger key name> <valoper address> <amount> --node http://chainripper-2.althea.net:26657 --chain-id gravity-bridge-1
 ```
